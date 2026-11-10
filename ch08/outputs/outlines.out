@@ -1,0 +1,4 @@
+Ticket: bug high True
+{'label': '請求'}
+{'label': '請求'}
+CacheInfo(hits=1, misses=1, maxsize=64, currsize=1)

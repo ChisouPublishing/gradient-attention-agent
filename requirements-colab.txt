@@ -1,0 +1,9 @@
+# Colab の既存 PyTorch / torchvision を優先する。requirements.txt は旧検証環境の完全固定版。
+# --upgrade を付けず、ノートブックから実行する。
+numpy>=1.26,<3
+torch>=2.6,<3
+torchvision>=0.21,<1
+mcp==2.3.0
+PyYAML==6.0.3
+opentelemetry-sdk==1.45.2
+opentelemetry-exporter-otlp-proto-http==1.45.2

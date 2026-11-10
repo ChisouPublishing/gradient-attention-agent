@@ -1,0 +1,11 @@
+通常: {'answer': '注文は O-1 です', 'steps': 1, 'cost': 0.02}
+堂々巡り: ステップ上限 ／ 2 回目の結果: （下で確認）
+  2 回目に返したツール結果に警告が入るか: True
+承認なしの返金: 承認をお願いします
+コスト上限: コスト上限
+並列実行の結果の順: ['t1', 't2', 't3']
+OK の組み合わせ: ['fetch_url', 'calculator']
+NG の組み合わせ: ValueError lethal trifecta: ['fetch_url',
+read_email + search_customer_db + calculator: 起動する
+承認どおり: {'ok': True}
+承認後に金額を変えた: この操作には承認が必要です。実行内容を提

@@ -1,0 +1,10 @@
+手 1: 'e' + 's' → 'es'（9 回）  l o w </w>  l o w e r </w>  n e w es t </w>  w i d es t </w>
+手 2: 'es' + 't' → 'est'（9 回）  l o w </w>  l o w e r </w>  n e w est </w>  w i d est </w>
+手 3: 'est' + '</w>' → 'est</w>'（9 回）  l o w </w>  l o w e r </w>  n e w est</w>  w i d est</w>
+手 4: 'l' + 'o' → 'lo'（7 回）  lo w </w>  lo w e r </w>  n e w est</w>  w i d est</w>
+手 5: 'lo' + 'w' → 'low'（7 回）  low </w>  low e r </w>  n e w est</w>  w i d est</w>
+日本語 69 文字・英語 200 文字（33 語）
+o200k_base（tiktoken）     日本語  56  英語  40  日本語/英語 1.40  日本語 1 文字あたり 0.81
+cl100k_base（tiktoken）    日本語  83  英語  40  日本語/英語 2.08  日本語 1 文字あたり 1.20
+Qwen2.5                  日本語  41  英語  40  日本語/英語 1.02  日本語 1 文字あたり 0.59
+multilingual-e5          日本語  38  英語  43  日本語/英語 0.88  日本語 1 文字あたり 0.55

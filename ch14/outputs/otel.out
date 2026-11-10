@@ -1,0 +1,12 @@
+db.query       status=UNSET {}
+rag.rerank     status=UNSET {'rag.rank_before': (0, 7, 14, 21, 28)}
+rag.retrieve   status=UNSET {}
+chat           status=UNSET {'gen_ai.usage.output_tokens': 30}
+execute_tool   status=ERROR {'tool.ok': False, 'error.type': 'TimeoutError'}
+agent.step.0   status=UNSET {}
+chat           status=UNSET {'gen_ai.usage.output_tokens': 2400}
+agent.step.1   status=UNSET {'agent.stop_reason': 'final_answer'}
+agent.run      status=UNSET {}
+応答の trace_id: 298363da … 長さ 32
+YAML のポリシー: [('errors', 'status_code'), ('slow', 'latency'), ('expensive', 'numeric_attribute'), ('baseline', 'probabilistic')]
+例外時の chat: ERROR TimeoutError 例外イベント 1

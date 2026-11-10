@@ -1,0 +1,21 @@
+100,000 件・384 次元。総当たり（NumPy）1 問 6.21 ms
+IVF_PQ（48 分割・1 件 48 バイト）  索引の作成 3.1 秒
+   nprobes= 1           recall@10 0.145  1 問  1.70 ms
+   nprobes= 8           recall@10 0.148  1 問  1.96 ms
+   nprobes=32           recall@10 0.148  1 問  2.96 ms
+   nprobes=32 refine=10 recall@10 0.542  1 問  3.91 ms
+IVF_PQ（96 分割・1 件 96 バイト）  索引の作成 6.4 秒
+   nprobes= 1           recall@10 0.376  1 問  1.77 ms
+   nprobes= 8           recall@10 0.392  1 問  2.09 ms
+   nprobes=32           recall@10 0.392  1 問  3.39 ms
+   nprobes=32 refine=10 recall@10 0.913  1 問  4.33 ms
+IVF_SQ（8bit・1 件 384 バイト）  索引の作成 0.6 秒
+   nprobes= 1           recall@10 0.910  1 問  1.84 ms
+   nprobes= 8           recall@10 0.966  1 問  2.34 ms
+   nprobes=32           recall@10 0.966  1 問  4.38 ms
+   nprobes=32 refine=10 recall@10 1.000  1 問  5.28 ms
+IVF_FLAT（圧縮なし・1 件 1,536 バイト）  索引の作成 0.9 秒
+   nprobes= 1           recall@10 0.918  1 問  1.71 ms
+   nprobes= 8           recall@10 1.000  1 問  1.77 ms
+   nprobes=32           recall@10 1.000  1 問  2.02 ms
+   nprobes=32 refine=10 recall@10 1.000  1 問  2.90 ms

@@ -1,0 +1,17 @@
+# otel-collector.yaml
+processors:
+  tail_sampling:
+    decision_wait: 10s
+    policies:
+      - name: errors            # 失敗は全部残す
+        type: status_code
+        status_code: {status_codes: [ERROR]}
+      - name: slow              # 遅いものも全部残す
+        type: latency
+        latency: {threshold_ms: 5000}
+      - name: expensive         # 高コストのものも全部残す
+        type: numeric_attribute
+        numeric_attribute: {key: gen_ai.usage.output_tokens, min_value: 2000}
+      - name: baseline          # それ以外は 5%
+        type: probabilistic
+        probabilistic: {sampling_percentage: 5}
